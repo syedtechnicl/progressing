@@ -1,0 +1,61 @@
+/* General container styling */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Individual card styling */
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styling */
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Card content styling */
+.card-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-category {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.card-id {
+  font-size: 14px;
+  color: #777;
+}
+
+.card-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #28a745;
+}
